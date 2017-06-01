@@ -1,7 +1,7 @@
 # ArcMap Addons
 While working on different projects over sometime I had to create and use some tools which acted as valuable addons to arcmap toolbox. I am sharing a few and I will keep on updating these as I keep working on new models.This toolbox was created on ArcMap 10.4 and is not backward compatible. The toolbox can be downloaded and added to existing toolbox to create additional functionalities.
 
-![GUI](http://i.imgur.com/Jz7QQjX.gif)
+![GUI](http://i.imgur.com/F4kSftD.gif)
 ## Table of contents
 * [Installation](#installation)
 * [Usage examples](#usage-examples)
@@ -10,6 +10,8 @@ While working on different projects over sometime I had to create and use some t
     * [MultiBand to Single Images](#multiband-to-single-images)
     * [Raster Properties as CSV](#raster-properties-to-csv)
     * [Raster Copy Iterative](#raster-copy-iterative)
+	* [Feature Select and Copy](#feature-select-and-copy)
+	* [Select and Calculate Field](#select-and-calculate-field)
 * [Credits](#credits)
 
 ## Installation
@@ -45,6 +47,16 @@ Having metadata helps in organising your asstets, but is not mandatory - you can
 The downloadpl tab allows the users to download assets. The platform can download Asset or Asset_XML which is the metadata file to desired folders.One again I was only interested in these two asset types(PSOrthoTile and REOrthoTile) for my work but can be easily extended to other asset types.
 
 ![rastercpy](http://i.imgur.com/8m1tkfr.gif)
+
+### Feature Select and Copy
+These tools allow the users to iteratively select features using a given SQL expression and then extract that as a new feature class. This can be done iteratively for all feature classes in the folder.
+
+![Ftselect](http://i.imgur.com/vIxUSbv.png)
+
+### Select and Calculate Field
+This tool allows you to select a field and then recalculate or calculate it based on expressions. The user has the option of simply filling empty fields based on selection of a different field. Meaning I can calculate a field B based on a selection of a seperate field A if I want.
+
+![Ftcalc](http://i.imgur.com/BjW5zJC.png)
 
 # Credits
 I would like to thank all those who bring me interesting problems to solve, there is little that is needed to keep one inspired.
