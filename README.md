@@ -1,6 +1,6 @@
 # ArcMap Addons
 
-[![DOI](https://zenodo.org/badge/90535170.svg)](https://zenodo.org/badge/latestdoi/90535170)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1009210.svg)](https://doi.org/10.5281/zenodo.1009210)
 
 While working on different projects over sometime I had to create and use some tools which acted as valuable addons to arcmap toolbox. I am sharing a few and I will keep on updating these as I keep working on new models.This toolbox was created on ArcMap 10.4 and is not backward compatible. The toolbox can be downloaded and added to existing toolbox to create additional functionalities.
 
