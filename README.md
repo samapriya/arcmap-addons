@@ -4,10 +4,12 @@
 
 While working on different projects over sometime I had to create and use some tools which acted as valuable addons to arcmap toolbox. I am sharing a few and I will keep on updating these as I keep working on new models.This toolbox was created on ArcMap 10.4 and is not backward compatible. The toolbox can be downloaded and added to existing toolbox to create additional functionalities.
 
-![GUI](http://i.imgur.com/F4kSftD.gif)
+![GUI](https://i.imgur.com/yYBCikL.gif)
 ## Table of contents
 * [Installation](#installation)
 * [Usage examples](#usage-examples)
+    * [Batch Raster to Point](#batch-raster-to-point)
+    * [Batch Table to CSV](#batch-table-to-csv)
 	* [Email Notification](#email-notification)
     * [Iterative Clip](#iterative-clip)
     * [MultiBand to Single Images](#multiband-to-single-images)
@@ -21,10 +23,20 @@ While working on different projects over sometime I had to create and use some t
 We assume that the user already has a copy of ArcMap >=10.4. The toolbox can be downloaded along with adjoining script and added onto existing toolbox. You can keep this toolbox as part of the default toolboxes by clicking Save Settings>Save as Default
 
 ## Usage examples
-Usage examples will vary and only continue to grow as new tools are added to the toolbox. 
+Usage examples will vary and only continue to grow as new tools are added to the toolbox.
+
+### Batch Raster to Point
+This tool allows you to convert all Raster datasets in a folder into a point with the value field converted to GRID code. The tool supports all raster formats supported by ArcMap and renames the files automatically to the source file name. The raster pixel is converted to a centroid value.
+
+![batchrp](https://i.imgur.com/oq7FPUh.jpg)
+
+### Batch Table to CSV
+This tool allows you to batch convert all table files(in this case it looks for '.dbf' files) and converts the fields into csv columns. This is an effective way when you want to handle a large number of dbf files to be imported into other softwares and or processing chains.
+
+![batchcsv](https://i.imgur.com/JmXe1i4.jpg)
 
 ### Email Notification
-I found this to be one of the most useful tools when running a long process and not having to wait for your results. The tool makes use of the smtp library and allows the user to set up an email service for an email to be sent out after a process has been completed. 
+I found this to be one of the most useful tools when running a long process and not having to wait for your results. The tool makes use of the smtp library and allows the user to set up an email service for an email to be sent out after a process has been completed.
 
 ![Email](http://i.imgur.com/Uj9m6II.gif)
 
@@ -34,7 +46,7 @@ This tool does exactl what the name suggests it uses an iterator tool to clip a 
 ![iterativeclip](http://i.imgur.com/na4VlTf.gif)
 
 If using on a private machine the Key is saved as a csv file for all future runs of the tool.
- 
+
 ### MultiBand to Single Images
 The aoijson tab within the toolset allows you to create filters and structure your existing input file to that which can be used with Planet's API. The tool requires inputs with start and end date, along with cloud cover. You can choose from multiple input files types such as KML, Zipped Shapefile, GeoJSON, WKT or even Landsat Tiles based on PathRow numbers. The geo option asks you to select existing files which will be converted into formatted JSON file called aoi.json. If using WRS as an option just type in the 6 digit PathRow combination and it will create a json file for you.
 
