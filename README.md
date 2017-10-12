@@ -75,3 +75,9 @@ This tool allows you to select a field and then recalculate or calculate it base
 
 # Credits
 I would like to thank all those who bring me interesting problems to solve, there is little that is needed to keep one inspired.
+
+### Changelog
+
+#### v0.2
+- Batch Table to CSV
+- Batch Raster to Points
